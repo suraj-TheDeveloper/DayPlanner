@@ -34,7 +34,6 @@
             </div>
         </nav>
         <div class="container">
-            <input type="button" style="margin: 12px;" id="timer" class="btn btn-primary" value="Start Timer">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <span id="display"></span>
@@ -55,24 +54,6 @@
                 }
             });
         });
-        // })
-        document.getElementById("timer").setAttribute("value", "Start Timer");
-        const timer = document.querySelector("#timer");
-        timer.addEventListener("click", function(){
-            var starttimer = document.getElementById("timer").value;
-            console.log(starttimer);
-            if(starttimer == "Start Timer") {
-                document.getElementById("timer").setAttribute("value", "Stop Timer");
-                var startime = new Date();
-                console.log(startime);
-            } else {
-                document.getElementById("timer").setAttribute("value", "Start Timer");
-                var stoptime = new Date();
-                console.log(stoptime);
-                var totaltime = Math.abs(startime.getTime() - totaltime.getTime()) / 1000;
-                var totaltime = totaltime/60;
-                console.log(totaltime);
-            }
-        });
+        // })        
     </script>
 </html>
